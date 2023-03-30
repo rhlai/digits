@@ -17,7 +17,7 @@ const ListContactsAdmin = () => {
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Stuff documents
-    const contactItems = ContactAdmin.collection.find({}).fetch();
+    const contactItems = Contacts.collection.find({}).fetch();
     return {
       contacts: contactItems,
       ready: rdy,
